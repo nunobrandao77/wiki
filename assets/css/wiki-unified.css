@@ -1,0 +1,72 @@
+
+/* Identidade visual unificada com a pagina inicial — Novembro 2026 */
+:root{--ink:#172f2f;--mut:#607671;--line:#d8e3db;--bg:#dce9e0;--card:#fbfdfb;--ac:#356d5e;--navy:#172f2f;--yel:#ac8563;--soft:#e9f2ea;--deep:#172f2f;--aqua:#6eae94;--copper:#ac8563}
+body{background:#dce9e0;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;line-height:1.65}
+a{color:#356d5e}
+.wrap{width:min(100% - 2.5rem,1036px)}
+header.bar{position:relative;top:auto;border:0;box-shadow:none;background:#dce9e0;width:min(1200px,calc(100% - 42px));margin:auto;z-index:50}
+.bar .wrap{width:100%;max-width:none;min-height:86px;padding:0 14px;gap:18px}
+.bar .brand{color:#172f2f;font-size:15px;font-weight:800}
+.bar .brand::before{content:"NB";display:inline-grid;place-items:center;width:38px;height:38px;color:#fff;background:#172f2f;border-radius:11px;margin-right:12px;font-size:13px;letter-spacing:-1px}
+.bar nav{justify-content:flex-end;gap:7px;flex-wrap:wrap;overflow:visible}
+.bar nav a,.bar nav .wiki-menu summary{color:#45665a;font-size:13px;font-weight:650;border-radius:8px;padding:.53rem .72rem}
+.bar nav a:hover,.bar nav a.cur,.bar nav .wiki-menu summary:hover,.bar nav .wiki-menu[open] summary{background:#e9f2ea;color:#356d5e}
+.bar nav .wiki-menu summary:after{color:#528571}
+.bar nav .wiki-submenu{background:#fbfcf8;border-color:#d8e3db;box-shadow:0 18px 40px #285a4025}
+.bar nav .wiki-submenu a{color:#274f43}
+.bar nav .wiki-submenu a:hover{background:#e9f2ea}
+.bar .cta{display:none}
+/* A pagina de artigo e um unico papel branco, como a home */
+.wiki-sheet{width:min(1200px,calc(100% - 42px));margin:0 auto;background:#fbfcf8;border-radius:16px 16px 0 0;overflow:clip;box-shadow:0 8px 60px #285a4020}
+.top{background:#edf3ec;background-image:none!important;color:#172f2f;padding:68px 0 52px;border:0}
+.top::after{display:none}
+.top .wrap{width:min(100% - 4rem,1010px)}
+.top .eyebrow{font-size:11px;color:#356d5e;letter-spacing:2.4px}
+.top h1{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;font-size:clamp(2.4rem,5.2vw,4.15rem);font-weight:750;line-height:1.08;letter-spacing:-.055em;color:#172f2f;margin:18px 0}
+.top h1::after{background:#7aa78e;width:54px;height:3px;margin:20px 0 0}
+.top .lead{color:#607671;font-size:1rem;line-height:1.85;max-width:680px}
+.top .button{background:#172f2f;color:white;border-color:#172f2f;border-radius:8px;padding:.72rem 1.1rem;font-size:13px}
+.top .button.alt{background:transparent;border-color:#bed2c5;color:#356d5e}
+.wiki-sheet > .wrap{width:min(100% - 4rem,1010px)}
+.breadcrumb{font-size:12px;color:#648275;padding:24px 0 10px}
+.breadcrumb a{color:#356d5e}
+.layout{grid-template-columns:minmax(0,1fr) 218px;gap:36px}
+.content>section{margin:1.7rem 0 2.55rem}
+.content>section>h2{color:#172f2f;font-size:clamp(1.45rem,2.7vw,1.85rem);letter-spacing:-.035em}
+.content p,.content li{color:#506960}
+.sidebar{background:#f5f9f4;box-shadow:none;border:1px solid #d8e3db;border-top:3px solid #77a78f;border-radius:10px;top:1.5rem}
+.sidebar strong{color:#356d5e}
+.sidebar a{color:#567468}
+.sidebar a:hover,.sidebar a.cur{background:#e2eee5;color:#245c4a}
+.card,.panel,.article-item,.figure{background:#fff;border:1px solid #d8e3db;border-radius:11px;box-shadow:none}
+.card{border-left:1px solid #d8e3db;padding:21px}
+.card:hover{border-color:#90bba2;box-shadow:0 12px 24px #14392e12}
+.card h3,.panel h3{color:#172f2f}
+.card p{color:#607671}
+.card .arrow{color:#356d5e}
+.tag{color:#356d5e;background:#e5f0e8;border-radius:20px;padding:4px 10px;font-size:10px}
+.figure img{background:#f4f7f5}
+.note{background:#e9f2ea;border-color:#6a9f83;color:#365c4c}
+.note.warning{background:#f6eee4;border-color:#ac8563}
+.project-feature{background:#e4efe6;color:#172f2f;border:1px solid #cbded0;box-shadow:none}
+.project-feature h3{color:#172f2f}
+.project-feature p{color:#607671}
+.project-feature a{color:#356d5e}
+.project-toolbar button{border:1px solid #d8e3db;color:#567569;border-radius:26px;background:#fff}
+.project-toolbar button[aria-pressed=true]{background:#2a584c;border-color:#2a584c;color:#fff}
+.project-search{border:1px solid #cddfd2;border-radius:9px}
+.wiki-intro-grid a{border:1px solid #d8e3db;background:#fff;color:#172f2f}
+.wiki-intro-grid a:hover{border-color:#90bba2}
+.wiki-intro-grid span{color:#607671}
+.wiki-intro-grid .wi-icon{color:#356d5e}
+.elec-project-card{background:#e4efe6!important;color:#172f2f!important;min-height:185px}
+.elec-project-card h3{color:#172f2f!important}.elec-project-card p{color:#607671!important}
+.elec-project-card .tag{color:#356d5e;background:#fff}.elec-project-card .arrow{color:#356d5e}
+footer{width:min(1200px,calc(100% - 42px));margin:0 auto;background:#d0e1d4;color:#597367;padding:18px 0;font-size:11px}
+footer .wrap{width:calc(100% - 42px);max-width:1155px}
+footer a{color:#356d5e}
+.content details:not(.wiki-menu){border-color:#d8e3db}
+.content pre{background:#172f2f}
+@media(max-width:900px){.layout{grid-template-columns:1fr}.sidebar{position:static;order:-1}.bar .wrap{flex-wrap:wrap;padding:12px 10px}.bar nav{justify-content:flex-start;width:100%}}
+@media(max-width:590px){.wiki-sheet,header.bar,footer{width:100%}.top{padding:45px 0 35px}.top .wrap,.wiki-sheet>.wrap{width:calc(100% - 40px)}.top h1{font-size:2.45rem;letter-spacing:-.04em}.bar nav{flex-wrap:nowrap;overflow-x:auto;padding-bottom:4px}.bar nav .wiki-submenu{position:fixed;left:16px;right:16px;top:auto;min-width:0}.cards,.wiki-intro-grid{grid-template-columns:1fr}.project-feature{grid-template-columns:1fr}}
+@media print{body{background:white}.wiki-sheet{width:100%;box-shadow:none}.top{background:white}.bar{display:none}}
