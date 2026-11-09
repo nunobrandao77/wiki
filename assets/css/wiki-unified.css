@@ -70,3 +70,42 @@ footer a{color:#356d5e}
 @media(max-width:900px){.layout{grid-template-columns:1fr}.sidebar{position:static;order:-1}.bar .wrap{flex-wrap:wrap;padding:12px 10px}.bar nav{justify-content:flex-start;width:100%}}
 @media(max-width:590px){.wiki-sheet,header.bar,footer{width:100%}.top{padding:45px 0 35px}.top .wrap,.wiki-sheet>.wrap{width:calc(100% - 40px)}.top h1{font-size:2.45rem;letter-spacing:-.04em}.bar nav{flex-wrap:nowrap;overflow-x:auto;padding-bottom:4px}.bar nav .wiki-submenu{position:fixed;left:16px;right:16px;top:auto;min-width:0}.cards,.wiki-intro-grid{grid-template-columns:1fr}.project-feature{grid-template-columns:1fr}}
 @media print{body{background:white}.wiki-sheet{width:100%;box-shadow:none}.top{background:white}.bar{display:none}}
+
+
+/* Documentação de failover pfSense */
+.shot-grid.two-up{grid-template-columns:repeat(2,minmax(0,1fr));}
+.status-strip{display:flex;flex-wrap:wrap;gap:.7rem;margin:1rem 0 1.2rem}
+.status-pill{display:inline-flex;align-items:center;gap:.5rem;padding:.48rem .78rem;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--ink);font-size:.86rem;font-weight:600}
+.status-pill i{display:inline-block;width:.6rem;height:.6rem;border-radius:50%}
+.status-pill.ok i{background:#5ba56a}.status-pill.warn i{background:#f0c04d}.status-pill.bad i{background:#c34f45}
+.sequence-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:1rem;margin-top:1rem}
+.sequence-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:1rem 1.1rem}
+.sequence-card h3{margin:.1rem 0 .5rem;font-size:1.06rem}
+.sequence-card ol{margin:.2rem 0 0;padding-left:1.2rem}
+.sequence-card li{margin:.42rem 0}
+.callout-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin:1rem 0}
+.callout{background:#fff;border:1px solid var(--line);border-radius:12px;padding:1rem}
+.callout strong{display:block;color:var(--ink);margin-bottom:.35rem}
+.callout p{margin:0;color:var(--mut)}
+.caption-link{font-size:.92rem;color:var(--ac)}
+.related-link-card{display:flex;justify-content:space-between;align-items:center;gap:1rem;background:#fff;border:1px solid var(--line);border-radius:12px;padding:1rem 1.1rem;text-decoration:none;color:inherit}
+.related-link-card:hover{border-color:#90bba2;box-shadow:0 12px 24px #14392e12}
+.related-link-card strong{display:block;color:var(--ink)}
+.related-link-card span:last-child{color:var(--ac);font-weight:700}
+@media(max-width:900px){.shot-grid.two-up,.sequence-grid,.callout-grid{grid-template-columns:1fr}}
+
+/* Apartes pedagógicos: Novembro 2026 */
+.explainer-section{border-top:1px solid #d8e3db;padding-top:1.45rem}
+.explainer-label{font-size:.67rem;letter-spacing:.15em;font-weight:800;color:#527d6e;margin-bottom:.5rem}
+.glossary-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.75rem;margin:1.1rem 0}
+.glossary-grid>div{background:#f6faf5;border:1px solid #d9e6dc;border-radius:12px;padding:1rem 1.1rem}
+.glossary-grid strong{color:#224b3e;display:block;margin-bottom:.3rem}
+.glossary-grid p{margin:0;font-size:.91rem;line-height:1.55}
+.simple-diagram{display:grid;grid-template-columns:repeat(3,1fr);gap:.7rem;padding:1.2rem;background:#edf4ed;border:1px solid #d0e2d5;border-radius:12px;margin:1.2rem 0}
+.diagram-label{grid-column:1/-1;text-align:center;font-weight:700;color:#315d4d;padding-bottom:.35rem}
+.diagram-network{background:#fff;border-radius:10px;border:1px solid #b9d5c1;padding:1rem .65rem;display:flex;align-items:center;flex-direction:column;text-align:center;gap:.2rem}
+.diagram-network span{font-size:.78rem;letter-spacing:.06em;font-weight:750;color:#4b8c73}
+.diagram-network strong{font-size:.95rem;color:#224739}
+.failover-feature{background:#edf5ec!important}
+.mini-tag{display:inline-block;font-size:.69rem;font-weight:800;color:#356d5e;letter-spacing:.12em;margin-bottom:.55rem}
+@media(max-width:650px){.simple-diagram,.glossary-grid{grid-template-columns:1fr}}
