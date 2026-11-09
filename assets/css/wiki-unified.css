@@ -113,3 +113,12 @@ footer a{color:#356d5e}
 /* Caixas do failover equilibradas */
 .sequence-grid > *{box-sizing:border-box;min-width:0;width:100%;margin:0;height:100%}
 .sequence-grid > .note.warning{padding:1rem 1.1rem}
+
+/* Respiro vertical entre os cartões e as capturas do failover */
+.sequence-grid + .shot-grid.two-up{margin-top:26px;}
+.sequence-grid{margin-bottom:0;}
+.shot-grid.two-up{gap:18px;}
+@media(max-width:900px){.sequence-grid + .shot-grid.two-up{margin-top:22px;}}
+
+/* Guia Cloudflare e alojamento */
+.hosting-flow{display:flex;gap:12px;align-items:center;background:#eef5ee;border:1px solid #d8e3db;border-radius:14px;padding:16px;margin:24px 0}.hosting-flow>div{flex:1;display:flex;flex-direction:column;gap:5px;align-items:center;text-align:center;background:#fff;padding:19px 9px;border:1px solid #d8e3db;border-radius:11px}.hosting-flow>div span{font-size:11px;font-weight:800;color:#528575;letter-spacing:1px}.hosting-flow>div strong{color:#172f2f}.hosting-flow>div small{color:#607671}.hosting-flow>b{color:#66957a}.hosting-compare{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:20px 0}.hosting-compare>div{background:#f7faf6;border:1px solid #d8e3db;border-radius:12px;padding:22px}.hosting-compare h3{margin:0 0 10px;color:#172f2f}.hosting-compare p{margin:0}.reference-links{display:flex;flex-wrap:wrap;gap:14px;margin:22px 0}.reference-links a{padding:11px 15px;border:1px solid #d8e3db;border-radius:10px;background:#fff;text-decoration:none;font-size:13px}@media(max-width:680px){.hosting-flow{flex-direction:column}.hosting-flow>div{width:100%}.hosting-flow>b{transform:rotate(90deg)}.hosting-compare{grid-template-columns:1fr}}
