@@ -78,7 +78,7 @@ footer a{color:#356d5e}
 .status-pill{display:inline-flex;align-items:center;gap:.5rem;padding:.48rem .78rem;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--ink);font-size:.86rem;font-weight:600}
 .status-pill i{display:inline-block;width:.6rem;height:.6rem;border-radius:50%}
 .status-pill.ok i{background:#5ba56a}.status-pill.warn i{background:#f0c04d}.status-pill.bad i{background:#c34f45}
-.sequence-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:1rem;margin-top:1rem}
+.sequence-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin-top:1rem;align-items:stretch}
 .sequence-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:1rem 1.1rem}
 .sequence-card h3{margin:.1rem 0 .5rem;font-size:1.06rem}
 .sequence-card ol{margin:.2rem 0 0;padding-left:1.2rem}
@@ -109,3 +109,7 @@ footer a{color:#356d5e}
 .failover-feature{background:#edf5ec!important}
 .mini-tag{display:inline-block;font-size:.69rem;font-weight:800;color:#356d5e;letter-spacing:.12em;margin-bottom:.55rem}
 @media(max-width:650px){.simple-diagram,.glossary-grid{grid-template-columns:1fr}}
+
+/* Caixas do failover equilibradas */
+.sequence-grid > *{box-sizing:border-box;min-width:0;width:100%;margin:0;height:100%}
+.sequence-grid > .note.warning{padding:1rem 1.1rem}
