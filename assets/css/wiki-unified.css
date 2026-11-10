@@ -138,3 +138,20 @@ footer a{color:#356d5e}
 .card-topic-tags .tag:nth-child(2){background:#f6f6ee;color:#6d7659;border-color:#dce2d2}
 .article-taxonomy{margin:12px 0 14px}
 .article-topic-tag{font-size:11px;color:#396f59;background:#fff;border:1px solid #caddce;border-radius:30px;padding:4px 11px;font-weight:650}
+
+/* Ensaios de autenticação Windows NT */
+.nt-domain-case{border-top:1px solid #d8e3db;margin-top:2rem;padding-top:1.4rem}
+.nt-domain-shots{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.1rem;margin:1.25rem 0}
+.nt-domain-shots .figure{margin:0;min-width:0}
+.nt-domain-shots img{display:block;width:100%;height:auto;object-fit:contain}
+@media(max-width:760px){.nt-domain-shots{grid-template-columns:1fr}}
+
+/* Galeria uniforme de capturas do laboratório retro */
+#retro .shot-grid.retro-uniform-shots{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:stretch;gap:20px;margin:20px 0 26px}
+#retro .retro-uniform-shots .figure{display:flex;flex-direction:column;min-width:0;margin:0;overflow:hidden}
+#retro .retro-uniform-shots .figure>a{display:flex;justify-content:center;align-items:center;height:260px;min-height:260px;background:#eef3ef;padding:8px;box-sizing:border-box}
+#retro .retro-uniform-shots .figure>img{width:100%;height:260px;object-fit:contain;background:#eef3ef;padding:8px;box-sizing:border-box;display:block}
+#retro .retro-uniform-shots .figure a img{display:block;width:100%;height:100%;object-fit:contain;object-position:center;background:#eef3ef}
+#retro .retro-uniform-shots figcaption{padding:14px 16px;flex:1;line-height:1.55}
+#retro .retro-safety-note{margin:18px 0 24px}
+@media(max-width:700px){#retro .shot-grid.retro-uniform-shots{grid-template-columns:1fr}#retro .retro-uniform-shots .figure>a,#retro .retro-uniform-shots .figure>img{height:220px;min-height:220px}}
