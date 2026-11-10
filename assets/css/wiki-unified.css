@@ -131,3 +131,10 @@ footer a{color:#356d5e}
 .fog-flow-node small{font-size:.79rem;color:#607671;line-height:1.5}
 .fog-flow-arrow{display:grid;place-items:center;font-size:1.5rem;color:#5f987e}
 @media(max-width:760px){.fog-flow{flex-direction:column}.fog-flow-arrow{transform:rotate(90deg)}}
+
+/* Classificação transversal sem duplicar entradas de navegação */
+.card-topic-tags,.article-taxonomy{display:flex;flex-wrap:wrap;gap:7px;align-items:center;margin:10px 0 12px}
+.card-topic-tags .tag{display:inline-flex;align-items:center;border:1px solid #c8dfce;background:#eaf3eb;color:#30664f;font-size:11px;padding:3px 9px}
+.card-topic-tags .tag:nth-child(2){background:#f6f6ee;color:#6d7659;border-color:#dce2d2}
+.article-taxonomy{margin:12px 0 14px}
+.article-topic-tag{font-size:11px;color:#396f59;background:#fff;border:1px solid #caddce;border-radius:30px;padding:4px 11px;font-weight:650}
