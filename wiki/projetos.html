@@ -43,7 +43,18 @@
 <div><strong>Laboratório de sistemas antigos</strong><p>Explorar as possibilidades e limitações de compatibilidade de sistemas históricos com métodos de arranque modernos.</p></div>
 <div><strong>Biblioteca central de ISOs</strong><p>Manter as imagens organizadas num único servidor, simplificando o acesso e a gestão.</p></div>
 </div>
-<div class="explainer-section" id="pxe-empresa">
+<div class="explainer-section" id="pxe-testes-reais">
+<div class="explainer-label">TESTES REAIS · LIMITAÇÕES OBSERVADAS</div>
+<h3>Nem todas as imagens arrancaram como esperado</h3>
+<p>Durante as experiências de arranque pela rede com o iVentoy, algumas imagens de distribuições Linux que se pretendia utilizar em máquinas virtuais não arrancaram corretamente. Entre os exemplos observados estiveram o <strong>Linux Mint</strong> e o <strong>Kali Linux</strong>.</p>
+<div class="glossary-grid">
+<div><strong>Linux Mint</strong><p>Foi tentado o arranque pela rede para utilização numa VM, mas o processo não decorreu como esperado.</p></div>
+<div><strong>Kali Linux</strong><p>Também apresentou problemas no arranque pela rede nas experiências realizadas para uma VM.</p></div>
+</div>
+<div class="note"><strong>Resultado do teste:</strong> arranque por PXE/iVentoy sem sucesso satisfatório nestes dois casos. A causa exata não foi determinada e não estão aqui registadas mensagens de erro ou logs que permitam identificá-la.</div>
+<p>Esta experiência é útil para distinguir a <strong>disponibilidade de uma ISO no menu</strong> da <strong>compatibilidade efetiva de arranque</strong>. O resultado pode variar com a imagem, versão do sistema, firmware BIOS/UEFI, opções de arranque e configuração da rede. São hipóteses gerais de diagnóstico, não causas comprovadas destes testes.</p>
+<p>O facto de estas imagens terem apresentado dificuldades no arranque pela rede <strong>não significa que as distribuições sejam incompatíveis com máquinas virtuais</strong>: a instalação direta por ISO e o arranque por PXE são processos diferentes.</p>
+</div><div class="explainer-section" id="pxe-empresa">
 <div class="explainer-label">UTILIZAÇÃO POSSÍVEL · AMBIENTE EMPRESARIAL</div>
 <h3>Porque é tão útil numa empresa com muitos computadores?</h3>
 <p>Numa empresa com dezenas ou centenas de postos de trabalho, preparar cada computador com um CD, DVD ou pen USB torna-se repetitivo: é preciso transportar os suportes, atualizar as imagens e repetir o processo em cada equipamento.</p>
